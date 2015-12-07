@@ -1,0 +1,48 @@
+<h1>The Canary Cage</h1>
+<table>
+  <thead>
+    <th>
+      Id
+    </th>
+    <th>
+      Amount
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Brand
+    </th>
+    <th>
+      Description
+    </th>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td>
+          <%= list.id %>
+        </td>
+        <td>
+          <%= list.amt %>
+        </td>
+        <td>
+          <%= list.item %>
+        </td>
+        <td>
+          <%= list.brand %>
+        </td>
+        <td>
+          <%= list.reason %>
+        </td>
+        <td>
+          <a href='/modify/<%= list.id %>'><i class="fa fa-wrench"></i></a>
+        </td>
+        <td>
+          <a href='/remove/<%= list.id %>'><i class="fa fa-trash"></i></a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

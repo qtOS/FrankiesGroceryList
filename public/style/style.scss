@@ -1,0 +1,123 @@
+
+html, body{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(86, 46, 171, 0.65);
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 100%;
+  font-family: 'Kadwa', serif;
+  header{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(175, 255, 182, 0.81);
+    position: fixed;
+    top: 0;
+
+    nav{
+      background-color: rgba(104, 181, 119, 0.76);
+      height: 100%;
+      width: 20%;
+      min-width: 200px;
+      margin: 0;
+      float: left;
+
+
+      ul{
+        clear: both;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        width: auto;
+        padding-left: 50%;
+
+
+
+        li:first-child{
+          display: block;
+          padding: 0;
+          margin: 0;
+          transform: rotate(90deg);
+          top: 2%;
+          bottom: 0;
+          position: absolute;
+          font-size: 16vh;
+
+        }
+        li{
+          display: none;
+        }
+      }
+
+      &:hover{
+        ul{
+          padding-left: 0;
+        }
+        li:first-child{
+          display: none;
+        }
+        li{
+        display: inline-block;
+        }
+      }
+    }
+    #barrel_containter{
+      width: 10%;
+      height: 80%;
+      position: absolute;
+      top: 0%;
+      right: 45%;
+      left: 45%;
+      clear: both;
+      padding: 1%;
+      margin: 0;
+      .skBarrel{
+        top: 5%;
+        left: 20%;
+        margin: 0;
+        list-style-image: url('barrel.svg');
+        font-size: 13vw;
+        position: absolute;
+        line-height: 50%;
+
+        &:first-child{
+          left: 70%;
+          z-index: 5;
+        }
+        &:last-child{
+          left: 120%;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  #content-wrapper{
+    width: 100%;
+    height: 65%;
+    position: fixed;
+    top:20%;
+    background-color: rgba(235, 155, 217, .3);
+
+
+    h1{
+      position: absolute;
+      top: -13.5%;
+      right: 5%;
+      background-color: rgba(235, 155, 217, 0.9);
+      padding: 10px;
+    }
+  }
+  footer{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(233, 255, 94, 0.9);
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.barrel{
+  color: #fff;
+}

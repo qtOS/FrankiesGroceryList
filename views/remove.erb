@@ -1,0 +1,9 @@
+<p>
+  Are you sure you want to erase item # <%= @list.id %>?
+  You only want to check off <em><%= @list.item %></em> if it is complete!
+</p>
+
+<form action="/remove" method="post">
+  <input type="hidden" name="id" value="<%= @list.id %>">
+  <input type="submit" value="Take off">
+</form>
